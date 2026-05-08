@@ -179,7 +179,6 @@ func _release_touch_shot() -> void:
 func _shoot(direction: Vector2, power: float) -> void:
 	if current_planet == null:
 		return
-	print("shot")
 
 	current_planet_holder.remove_child(current_planet)
 	get_tree().current_scene.add_child(current_planet)
